@@ -8,10 +8,10 @@ public class BitwiseOperator {
     }
     public static boolean firstMethod(){
         System.out.println("firstMethod");
-        return false;
+        return true;
     }
     public static boolean secondMethod(){
         System.out.println("secondMethod");
-        return true;
+        return false;
     }
 }
