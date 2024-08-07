@@ -1,14 +1,11 @@
 package Lesson_04;
 
-import java.util.ArrayList;
-import java.util.Collections;
-import java.util.List;
-import java.util.Scanner;
+import java.util.*;
 
 public class Exercise_ArrayList {
 
     static List<Integer> myArrayList = new ArrayList<>();
-
+    static int numberOfElements = 10;
     public static void main(String[] args) {
         printSimpleMenu();
         addPrintNumber();
@@ -27,11 +24,11 @@ public class Exercise_ArrayList {
     }
 
     private static List<Integer> addPrintNumber() {
-        myArrayList.add(20);
-        myArrayList.add(3);
-        myArrayList.add(76);
-        myArrayList.add(8);
-        myArrayList.add(23);
+        Random random = new Random();
+        for (int index = 0; index < numberOfElements; index++) {
+            int randomNumber = random.nextInt(1000);
+            myArrayList.add(randomNumber);
+        }
         System.out.println("Print Numbers: " + myArrayList);
         return myArrayList;
     }
