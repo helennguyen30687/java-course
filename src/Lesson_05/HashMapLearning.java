@@ -29,5 +29,6 @@ public class HashMapLearning {
 
         emergencyList.replace(116,"116","Something else else");
         System.out.println("after replace: "+emergencyList.get(116));
+
     }
 }
