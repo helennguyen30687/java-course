@@ -6,6 +6,7 @@ public class TestRobotCat {
         RobotCat solarRobotCat = new SolarRobotCat("SolarRobotCat","07/06/2022");
 
         System.out.println(batteryRobotCat.charge());
+        batteryRobotCat.doSth();
         System.out.println(solarRobotCat.charge());
     }
 }

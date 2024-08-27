@@ -1,6 +1,6 @@
 package Lesson_07;
 
-public class RobotCat {
+public class RobotCat extends Grandpa {
     private String name;
     private String productionDate;
 
