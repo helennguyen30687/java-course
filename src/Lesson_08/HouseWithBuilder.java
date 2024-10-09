@@ -33,12 +33,14 @@ public class HouseWithBuilder {
         private int doorNum = 1;
         private String topRoofColor = "red";
 
-        public void setDoorNum(int doorNum) {
+        public Builder setDoorNum(int doorNum) {
             this.doorNum = doorNum;
+            return this;
         }
 
-        public void setTopRoofColor(String topRoofColor) {
+        public Builder setTopRoofColor(String topRoofColor) {
             this.topRoofColor = topRoofColor;
+            return this;
         }
 
         public HouseWithBuilder build() {

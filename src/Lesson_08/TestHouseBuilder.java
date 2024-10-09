@@ -1,11 +1,14 @@
 package Lesson_08;
 
+import Lesson_08.HouseWithBuilder.Builder;
+
 public class TestHouseBuilder {
     public static void main(String[] args) {
-        HouseWithBuilder.Builder builder = new HouseWithBuilder.Builder();
-        builder.setDoorNum(2);
-        builder.setTopRoofColor("white");
-        HouseWithBuilder house = builder.build();
+        Builder builder = new Builder();
+        HouseWithBuilder house = builder
+                .setDoorNum(2)
+                .setTopRoofColor("white")
+                .build();
         System.out.println(house);
     }
 }
