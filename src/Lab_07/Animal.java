@@ -1,22 +1,20 @@
 package Lab_07;
 
-import java.util.Random;
+import java.security.SecureRandom;
 
 public class Animal {
     private int speed;
+    private String name;
 
-    public Animal() {
-    }
-
-    public Animal(int speed) {
-        this.speed = speed;
+    public Animal(int maxSpeed) {
+        this.speed = new SecureRandom().nextInt(maxSpeed);
     }
 
     public int getSpeed() {
         return speed;
     }
 
-    public void setSpeed(int speed) {
-        this.speed = speed;
+    public String getName() {
+        return name;
     }
 }
