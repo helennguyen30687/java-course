@@ -1,16 +1,13 @@
 package Lab_07;
 
-public class Horse extends Animal{
-    private static int HORSE_MAX_SPEED=75;
+import java.util.Random;
 
-    public Horse() {
-        super(HORSE_MAX_SPEED);
-    }
+public class Horse extends Animal {
+    private static int HORSE_MAX_SPEED = 75;
 
-    public static void main(String[] args) {
-        Animal horse = new Horse();
-        System.out.println(horse.getSpeed());
-        System.out.println(horse.getSpeed());
-        System.out.println(horse.getSpeed());
+    @Override
+    public int speed() {
+        Random random = new Random();
+        return random.nextInt(HORSE_MAX_SPEED) + 1;
     }
 }
