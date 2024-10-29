@@ -13,17 +13,17 @@ public class SpeedController {
 
         int maxSpeed = Math.max(tigerSpeed, Math.max(horseSpeed, dogSpeed));
         String winner;
-        System.out.println("The speed of tiger: "+ tigerSpeed);
-        System.out.println("The speed of horse: "+horseSpeed);
-        System.out.println("The speed of dog: "+dogSpeed);
+        System.out.println("The speed of tiger: " + tigerSpeed);
+        System.out.println("The speed of horse: " + horseSpeed);
+        System.out.println("The speed of dog: " + dogSpeed);
 
-        if(maxSpeed<=tigerSpeed && maxSpeed > horseSpeed){
-            winner= tiger.getClass().getSimpleName();
-        } else if (maxSpeed<= horseSpeed && maxSpeed>dogSpeed) {
-            winner=horse.getClass().getSimpleName();
-        }else {
-            winner=dog.getClass().getSimpleName();
+        if (maxSpeed <= tigerSpeed && maxSpeed > horseSpeed) {
+            winner = tiger.getClass().getSimpleName();
+        } else if (maxSpeed <= horseSpeed && maxSpeed > dogSpeed) {
+            winner = horse.getClass().getSimpleName();
+        } else {
+            winner = dog.getClass().getSimpleName();
         }
-        System.out.println("Winner is "+ winner+", with speed: "+ maxSpeed);
+        System.out.println("Winner is " + winner + ", with speed: " + maxSpeed);
     }
 }

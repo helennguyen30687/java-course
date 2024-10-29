@@ -8,6 +8,6 @@ public class Horse extends Animal {
 
     @Override
     public int speed() {
-        return new SecureRandom().nextInt(HORSE_MAX_SPEED)+1;
+        return new SecureRandom().nextInt(HORSE_MAX_SPEED) + 1;
     }
 }

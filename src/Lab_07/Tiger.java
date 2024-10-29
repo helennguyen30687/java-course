@@ -8,6 +8,6 @@ public class Tiger extends Animal {
 
     @Override
     public int speed() {
-        return new SecureRandom().nextInt(TIGER_MAX_SPEED)+1;
+        return new SecureRandom().nextInt(TIGER_MAX_SPEED) + 1;
     }
 }
