@@ -1,7 +1,6 @@
 package Lab_07;
 
 import java.security.SecureRandom;
-import java.util.Random;
 
 public class Tiger extends Animal {
     private static int TIGER_MAX_SPEED = 100;

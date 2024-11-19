@@ -26,7 +26,15 @@ public class Employee implements Comparable<Employee>{
     }
 
     @Override
-    public int compareTo(Employee o) {
-        return 0;
+    public String toString() {
+        return "Employee{" +
+                "name='" + name + '\'' +
+                ", salary=" + salary +
+                '}';
+    }
+
+    @Override
+    public int compareTo(Employee that) {
+        return that.getSalary()- this.getSalary();
     }
 }

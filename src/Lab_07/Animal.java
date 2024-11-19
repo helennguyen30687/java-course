@@ -1,7 +1,5 @@
 package Lab_07;
 
-import java.security.SecureRandom;
-
 public abstract class Animal {
 
     /*
@@ -15,7 +13,7 @@ public abstract class Animal {
         Bonus: Default name with Class variable
         Format: winner is <Animal name>, with speed: <Speed>
         Hints: ** Class name can get from object.getClass().getSimpleName();
-        int randómpêd = new SecureRandom().nextInt(50);
+        int randomspeed = new SecureRandom().nextInt(50);
     */
     private int speed;
 
