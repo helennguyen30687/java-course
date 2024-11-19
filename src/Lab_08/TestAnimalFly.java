@@ -17,9 +17,9 @@ public class TestAnimalFly {
                 .setSpeed(new SecureRandom().nextInt(100)).build();
         Animal eagle = animalBuilder.setName("Eagle").setFlyable(true)
                 .setSpeed(new SecureRandom().nextInt(389)).build();
-        Animal buzzard = animalBuilder.setName("Tiger").setFlyable(true)
+        Animal buzzard = animalBuilder.setName("Buzzard").setFlyable(true)
                 .setSpeed(new SecureRandom().nextInt(320)).build();
-        Animal hawk = animalBuilder.setName("Tiger").setFlyable(true)
+        Animal hawk = animalBuilder.setName("Hawk").setFlyable(true)
                 .setSpeed(new SecureRandom().nextInt(190)).build();
         Animal horse = animalBuilder.setName("Horse").setFlyable(false)
                 .setSpeed(new SecureRandom().nextInt(75)).build();
@@ -30,12 +30,10 @@ public class TestAnimalFly {
         animalList.add(horse);
         for (Animal animal : animalList) {
             if (animal.isFlyable()) {
-                System.out.println("abc " + animal.isFlyable());
                 animalRacingList.add(animal);
-                testAnimalFly.getAnimalWin(animalRacingList);
             }
         }
-
+        testAnimalFly.getAnimalWin(animalRacingList);
     }
 
     private Animal getAnimalWin(List<Animal> animalList) {
